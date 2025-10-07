@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { RefreshCw, Copy, Check, ExternalLink } from 'lucide-react';
@@ -9,7 +9,7 @@ interface QuickGeneratorProps {
 }
 
 export function QuickGenerator({ generator }: QuickGeneratorProps) {
-  const { generateKey, copyToClipboard, copiedKey } = useKeyGenerator();
+  const { copyToClipboard, copiedKey } = useKeyGenerator();
   const [generatedKey, setGeneratedKey] = useState<string>('');
   const [isGenerating, setIsGenerating] = useState(false);
 
@@ -33,7 +33,7 @@ export function QuickGenerator({ generator }: QuickGeneratorProps) {
   };
 
   // Generate initial key
-  React.useEffect(() => {
+  useEffect(() => {
     handleGenerate();
   }, [generator]);
 

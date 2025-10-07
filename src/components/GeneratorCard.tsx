@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Key, Shield, Hash, Lock, Smartphone, Palette, Code, Type, Hash as HashIcon, Wifi } from 'lucide-react';
+import { ArrowRight, Key, Shield, Hash, Lock, Palette, Code, Type, Hash as HashIcon, Wifi } from 'lucide-react';
 import { KeyGenerator } from '../hooks/useKeyGenerator';
 
 interface GeneratorCardProps {
