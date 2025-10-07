@@ -31,7 +31,7 @@ export function Layout({ children }: LayoutProps) {
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <div className="text-xl font-bold text-blue-600 dark:text-blue-400">
-                Key Generator
+                KeyGen
               </div>
             </Link>
 
@@ -169,7 +169,7 @@ export function Layout({ children }: LayoutProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="text-sm text-gray-600 dark:text-gray-400">
-              © 2024 Key Generator. Built with React, TypeScript & Tailwind CSS.
+              © 2024 KeyGen. Built with React, TypeScript & Tailwind CSS.
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-2">
               All keys are generated locally in your browser using cryptographically secure methods.
